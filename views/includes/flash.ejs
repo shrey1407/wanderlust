@@ -1,0 +1,13 @@
+<% if(success && success.length) { %>  <!--As success is an empty array even if the new listing is not created so that's why we added success.length over here !-->
+<div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
+    <%= success %>    
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<% } %>
+
+<% if(error && error.length) { %>  <!--As success is an empty array even if the new listing is not created so that's why we added success.length over here !-->
+<div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert">
+    <%= error %>    
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<% } %>
